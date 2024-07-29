@@ -1,0 +1,864 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(210, 17%, 98%);
+}
+.links {
+  display: flex;
+}
+
+header {
+  background-color: #2a6a91;
+}
+.header2 {
+  background-color: #175876;
+}
+.links p {
+  color: white;
+}
+.red {
+  color: red;
+}
+.white {
+  color: white;
+}
+.green {
+  color: rgb(20, 158, 20);
+}
+.logo {
+  padding: 20px;
+}
+.menuItem {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menuItem::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #00467f;
+  transition: all 0.5s ease;
+}
+
+.menuItem:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.menuItem:hover {
+  color: #00467f;
+}
+
+.menuItem:hover {
+  animation: hoverEffect 0.5s forwards;
+}
+
+@keyframes hoverEffect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  /* box-shadow: 0px 0px 5px 0px gainsboro; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.newsContainer {
+  width: 70%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.newsItem {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.newsTitle {
+  font-size: 24px;
+  color: #333;
+}
+
+.newsDate {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.iconImage {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.textInfo {
+  margin: 10px;
+}
+.newsDivText {
+  position: relative;
+  display: inline-block;
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transform: skewX(-20deg);
+  margin: 20px;
+  justify-content: end;
+}
+
+.divForNewsDivText {
+  display: flex;
+  justify-content: end;
+}
+.imagesForMarquee {
+  width: 200px;
+  height: 130px;
+  margin: 20px;
+}
+main {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.linkById{
+  text-decoration: none;
+}
+.sectionById{
+  background-color: white;
+  margin: 100px;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+  border-radius: 15px;
+}
+.boxForSidesById{
+  display: flex;
+  justify-content: space-around;
+}
+.imgById{
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.descriptionById{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: #175876;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rightSideForGetById{
+  width: 50%;
+  align-self: center;
+}
+.leftSideForGetById{
+  width: 40%;
+}
+.dateById{
+  text-align: end;
+  font-weight: 700;
+  margin-top: 20px;
+  color: rgb(100, 96, 96);
+}
+.footer {
+  background-color: #2a6a91;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footerSection h2 {
+  margin-bottom: 10px;
+}
+
+.footerLink {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.socialIcon {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.sectionIcon:hover{
+  transition-duration: 0.8s;
+  color: #f0ad4e;
+}
+.footerBottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.mega-menu {
+  width: 100%;
+  background: #333;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menuItem {
+  position: relative;
+}
+
+.menuItem a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItem a:hover {
+  background: #444;
+}
+
+.mega-menu-content {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+/* Passengers.css */
+
+.passengers-container {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+
+
+.logo-red { color: #d9534f; }
+.logo-white { color: white; }
+.logo-green { color: #5bc0de; }
+
+/* .navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f0ad4e;
+} */
+
+.scheduleContainer {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.scheduleTitle {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.scheduleSection {
+  margin-bottom: 100px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 13px 0px gainsboro;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scheduleTable th, .scheduleTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.scheduleTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.footer {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+  flex: 1;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #f0ad4e;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #f0ad4e;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.menuItem {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuItem p {
+  margin: 0;
+}
+
+.about {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about h3 {
+  font-size: 28px;
+  color: #444;
+  margin-top: 30px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #666;
+  margin: 15px 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about ul {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.about ul li {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.contacts {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  width: 75%;
+  margin: 40px auto;
+}
+
+.contacts-container {
+  text-align: center;
+}
+
+.contacts h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contacts p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.contactItem {
+  margin: 10px;
+  max-width: 200px;
+}
+
+.contactItem h3 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contactItem p {
+  font-size: 18px;
+  color: #555;
+}
+
+.map {
+  margin-top: 40px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lawsContainer {
+  text-align: center;
+}
+.laws {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.laws h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.laws p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.lawList {
+  margin-top: 30px;
+}
+
+.lawItem {
+  margin-bottom: 30px;
+}
+
+.lawItem h3 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.lawItem p {
+  font-size: 18px;
+  color: #555;
+}
+
+.noteContainer {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.noteTitle {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.noteContent {
+  text-align: left;
+}
+
+.noteItem {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.travelRulesContainer {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ruleItem {
+  margin-bottom: 20px;
+}
+
+.ruleItem h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.ruleItem p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.header1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+/* Dark */
+
+.newsContainerDark{
+  width: 70%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #003366;
+}
+.newsDateDark{
+  font-size: 14px;
+  color: #b0adad;
+  margin-bottom: 10px;
+}
+.newsTitleDark{
+  font-size: 24px;
+  color: #ffffff;
+}
+.contactsDark{
+  padding: 40px 20px;
+  background-color: #003366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  width: 75%;
+  margin: 40px auto;
+}
+.contactsDark h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contactsDark p {
+  font-size: 18px;
+  color: whitesmoke;
+  line-height: 1.6;
+}
+.contactItemDark h3 {
+  font-size: 22px;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.contactItemDark p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.lawsDark {
+  padding: 40px 20px;
+  background-color: #003366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.lawsDark h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.lawsDark p {
+  font-size: 18px;
+  color: #dad3d3;
+  line-height: 1.6;
+}
+.lawListDark h3{
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.scheduleTitleDark {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #409efd;
+}
+
+.scheduleSectionDark {
+  margin-bottom: 100px;
+  background: #003366;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sectionTitleDark {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.scheduleTableDark {
+  width: 100%;
+  border-collapse: collapse;
+  background: #003366;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scheduleTableDark th, .scheduleTableDark td {
+  border: 1px solid #111;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+.scheduleTableDark th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.scheduleTableDark tr:nth-child(even) {
+  background-color: #0080ff;
+  color: white;
+}
+
+.scheduleTableDark tr:hover td{
+  background-color: white;
+  color: black;
+}
+
+
+.noteContainerDark {
+  padding: 40px 20px;
+  background-color: #003366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.noteTitleDark {
+  font-size: 36px;
+  color: gainsboro;
+  margin-bottom: 20px;
+  border-bottom: 2px solid gainsboro;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.noteContentDark {
+  text-align: left;
+}
+
+.noteItemDark {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  background: #0080ff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.travelRulesContainerDark {
+  padding: 20px;
+  background-color: #003366;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ruleItemDark {
+  margin-bottom: 20px;
+}
+
+.ruleItemDark h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.ruleItemDark p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #fff;
+}
